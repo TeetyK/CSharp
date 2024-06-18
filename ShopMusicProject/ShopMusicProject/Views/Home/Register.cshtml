@@ -1,0 +1,124 @@
+﻿@model ShopMusicProject.Models.Customer;
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="position-relative" style="width:1300px;height:640px;">
+
+    <div style="background-color:#282424;width:1487px;height:80px;bottom:-15px;position:absolute;"></div>
+    <img src="/image/Rectangle 10.png" style="height:649px;" />
+    <div style="background-color:#111111;position:absolute;right:-185px;width:700px;height:580px;top:0;border-radius:10px;"></div>
+    <div class="bg" style="width:700px;height:500px;position:absolute;right:-185px;top:-40px;z-index:2;color:white;top:50px;border:2px solid white;border-radius:50px;background-color:gray;filter: blur(1.5rem);opacity:.4;"></div>
+        <div class="d-flex text-center pe-3 me-3 position-absolute" style="right:0;top:0;">
+      
+        <form asp-action="register" class="">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <input asp-for="CusId" type="hidden" value="C001"/>
+            <div class="" style="width:400px;height:60vh;position:absolute;right:0;z-index:3;color:white;top:50px;">
+                <div class="text-primary fs-3">
+                    สมัครสมาชิก
+                </div>
+                <div class="">
+                    <div class="m-3 d-flex flex-row row-2">
+                        <input asp-for="Fname" class="form-control " type="text" name="Fname" placeholder="ชื่อ" />
+                        <input asp-for="Lname" class="form-control ms-2" type="text" name="Lname" placeholder="นามสกุล" />
+                    </div>
+                   
+                        <span asp-validation-for="Fname" class="" style="color:red;"></span>
+                        <span asp-validation-for="Lname" class="" style="color:red;"></span>
+                    <div class="m-3">
+                        <input asp-for="Username" class="form-control" type="text" name="Username" placeholder="ชื่อผู้ใช้งาน" />
+                    </div>
+                    <span asp-validation-for="Username" class="" style="color:red"></span>
+                    <div class="m-3">
+                        <input asp-for="Email" class="form-control" type="email" name="Email" placeholder="อีเมล์"/>
+                        <span asp-validation-for="Email" class="" style="color:red;"></span>
+                    </div>
+                    <div class="m-3">
+                        <div class="d-flex flex-row row-2">
+                            <input asp-for="Password" id="password1" class="form-control" type="password" name="Password" placeholder="รหัสผ่าน" />
+                            <input style="" class="btn-check" id="btncheck1" type="checkbox" onclick="ShowPass1(this)"/>
+                            <label class="btn btn-outline-primary" for="btncheck1">แสดง</label>
+                        </div>
+                        <span asp-validation-for="Password" class="" style="color:red;"></span>
+                        <div class="d-flex flex-row row-2 mt-2">
+                            <input asp-for="ConFirmPassword" class="form-control" id="password2" type="password" name="ConFirmPassword" placeholder="รหัสผ่าน อีกครั้ง" />
+                            <input style="" class="btn-check" id="btncheck2" type="checkbox" onclick="ShowPass2(this)" />
+                            <label class="btn btn-outline-primary" for="btncheck2">แสดง</label>
+                        </div>
+                        <span asp-validation-for="ConFirmPassword" style="color:red"></span>
+                    </div>
+                    <div class="m-3">
+                        <input class="form-control" type="text" name="address" placeholder="ที่อยู่"/>
+                        <input class="form-control mt-2" type="text" name="phone" placeholder="เบอร์โทรศัพท์"/>
+                    </div>
+                    <input type="submit" value="สมัครสมาชิก" class="btn btn-primary w-75" />
+                </div>
+               @* <input type="checkbox"/> *@
+               <br />
+                <div class="float-end me-5 mt-2">
+                    <span class="float-none">
+                        คุณมีบัญชี Shop Music แล้วใช้หรือไม่
+                        <a href="#" class="me-2">
+                            เข้าสู่ระบบ
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+    
+
+   @* <div>
+        <a asp-action="Index" asp-controller="home">Back to List</a>
+    </div>*@
+    <script>
+        const password1 = document.querySelector("#password1");
+        const password2 = document.querySelector("#password2");
+        function ShowPass1(obj) {
+            if (obj.checked) {
+                password1.type = "text";
+            }else{
+                password1.type = "password";
+            }
+        }
+        function ShowPass2(obj) {
+            if (obj.checked) {
+                password2.type = "text";
+            }else{
+                password2.type = "password";
+            }
+        }
+    </script>
+
+  @*  <script>
+        const password1 = document.querySelector("#password1");
+        const password2 = document.querySelector("#password2");
+        const not_match = document.querySelector(".not-match"); 
+
+        function checkPassword(input1,input2) {
+            if (input1.value != input2.value) {
+                not_match.className = "not-match error";
+            }else{
+                not_match.className = "not-match sus";
+            }
+        }
+
+    </script>
+    <style>
+        .not-match{
+
+        }
+        .not-match error{
+            visibility:visible;
+        }
+        .not-match sus {
+            visibility:hidden
+        }
+    </style>*@
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }

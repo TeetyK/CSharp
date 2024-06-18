@@ -1,0 +1,82 @@
+﻿@using ShopMusicProject.ViewModels;
+@using System.Globalization;
+@model dynamic;
+@*model ShopMusicProject.Models.Product*@
+@{
+    CultureInfo us = new CultureInfo("en-us");
+
+}
+@foreach (PdVM item in Model.ShopDetail)
+{
+    <div style="position:relative;">
+        <div class="" style="background : linear-gradient(rgba(114, 137, 171, 1),rgba(92, 109, 134, 1));height:300px;width:1487px;position:absolute;">
+        <div style="">
+            <div style="width : 500px;position:absolute;right:90px;top:150px;">
+                @{
+                    var pdimg = "/image/" + item.Id + ".jpg";
+                }
+                <img src="@pdimg" style="width:450px;height:300px;" />
+            </div>
+            <div style="font-size: 50px; color:white;position:absolute;top:50px;left:50px;">
+                    <span>@item.Name</span>
+                <br />
+               
+                <span style="font-size:20px;">Brand : @item.BrandName</span>
+                    <span class="" style="position:absolute;top:300px;width:300x;left:10px;">
+                        ฿ @item.Price
+                    </span>
+                <hr />
+                <div style="font-size : 30px;position:absolute;top:250px;width:220px;left:300px;">
+                        <div style="text-align:center;line-height:2;">Quantity</div>
+                        @*<button class="btn btn-group-sm" onclick="decrease()" style="background-color:#282424;color:white;">
+                        -
+                    </button>*@
+                    
+                        <input value="1" id="result" type="number" name="quantity" disabled style="width:120px;text-align:center;color:black;position:relative;left:40px;" />
+
+                       @* <button class="btn btn-group-sm" onclick="add()" style="background-color:#282424;color:white;">
+                        +
+                    </button>*@
+
+                </div>
+
+
+            </div>
+        </div>
+        <div style="position:absolute;top:420px;left:380px;">
+            <a asp-route-id="@item.Id" asp-controller="Cart" asp-action="AddDtl" class="btn btn-outline-primary">
+                    <svg width="40" height="30" viewBox="0 0 106 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M33.5856 61.6995C30.4807 61.6995 27.9588 63.579 27.9588 65.893C27.9588 68.2071 30.4807 70.0899 33.5856 70.0899C36.6861 70.0899 39.208 68.2071 39.208 65.893C39.208 63.579 36.6861 61.6995 33.5856 61.6995Z" fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M81.5823 61.6995C78.4774 61.6995 75.9555 63.579 75.9555 65.893C75.9555 68.2071 78.4774 70.0899 81.5823 70.0899C84.6872 70.0899 87.2092 68.2071 87.2092 65.893C87.2092 63.579 84.6872 61.6995 81.5823 61.6995Z" fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M59.9567 36.7904H78.3742V31.853H59.9567V36.7904ZM27.1408 18.9825L25.8158 8.91003H8.59082V13.8475H19.8092L25.4625 55.6517H90.9175L97.41 18.9825H27.1408Z" fill="white" />
+                    </svg>
+                    เพิ่มตะกร้า
+                </a>
+
+        </div>
+    </div> <!--ปิดใหญ่-->
+        <div style="background : linear-gradient(rgba(114, 137, 171, 1),rgba(19, 18, 18, 1));height:655px;width:1487px;position:absolute;z-index:-1;">
+
+    </div>
+    </div>
+  @*  <script>
+        var t = 0;
+        console.log("Hello,World");
+        function add() {
+            if (t <= @item.Stock) {
+                t++;
+                console.log(t);
+                document.getElementById('result').value = t;
+            }
+
+        }
+        function decrease() {
+            if (t >= 1) {
+                t--;
+                document.getElementById('result').value = t;
+            }
+
+        }
+
+    </script>*@
+}

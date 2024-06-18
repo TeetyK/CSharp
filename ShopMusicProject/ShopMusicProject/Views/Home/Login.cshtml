@@ -1,0 +1,63 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Login";
+}
+<div class="position-relative" style="width:1300px;height:640px;">
+    <div style="background-color:#282424;width:1487px;height:80px;bottom:-15px;position:absolute;"></div>
+    <img src="/image/Rectangle 10.png" style="height:649px;"/>
+    <div style="background-color:#111111;position:absolute;right:-185px;width:700px;height:580px;top:0;border-radius:10px;"></div>
+    <div class="bg" style="width:700px;height:500px;position:absolute;right:-185px;top:-40px;z-index:2;color:white;top:50px;border:2px solid white;border-radius:50px;background-color:gray;filter: blur(1.5rem);opacity:.4;"></div>
+    <form asp-action="login" asp-controller="home" method="post">
+      
+        <div class="d-flex row p-3 text-center" style="width:400px;height:60vh;position:absolute;right:0;z-index:3;color:white;top:50px;">
+            <div>
+                เข้าสู่ระบบ
+            </div>
+            <div class="">
+                <div class="m-3">
+                    <input class="form-control" type="text" name="userName" placeholder="ผู้ใช้งาน / อีเมล์" />
+                </div>
+                <div class="m-3 d-flex">
+                    <input class="form-control"id="password2" type="password" name="userPass" placeholder="รหัสผ่าน"/>
+                    <input style="" class="btn-check" id="btncheck2" type="checkbox" onclick="ShowPass2(this)" />
+                    <label class="btn btn-outline-primary" for="btncheck2">แสดง</label>
+                </div>
+                    <button type="submit" class="btn btn-primary ">เข้าสู่ระบบ</button>
+            </div>
+            <div class="">
+                <a><span style="color : royalblue">
+                            <p class="float-start mb-2 mt-2">ลืมรหัสผ่าน ?</p>
+                </span></a>
+            </div><br/>
+            <div class="float-end mt-2">
+                <span class="float-none">คุณพึ่งเคยเข้า Shop Music ใช้หรือไม่
+                    <a href="#" class="me-2">
+                        สมัครใหม่
+                    </a>
+                    </span>
+                </div>
+        </div>
+    </form>
+   <a class="position-absolute"asp-action="login" asp-controller="employee" style="bottom:0;z-index:4;text-decoration:none;left:10px;">เข้าสู่ระบบสำหรับเจ้าหน้าที่</a>
+</div>
+<script>
+    const password1 = document.querySelector("#password1");
+    const password2 = document.querySelector("#password2");
+    function ShowPass1(obj) {
+        if (obj.checked) {
+            password1.type = "text";
+        } else {
+            password1.type = "password";
+        }
+    }
+    function ShowPass2(obj) {
+        if (obj.checked) {
+            password2.type = "text";
+        } else {
+            password2.type = "password";
+        }
+    }
+</script>

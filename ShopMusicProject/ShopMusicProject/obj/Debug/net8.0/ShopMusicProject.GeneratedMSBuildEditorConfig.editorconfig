@@ -1,0 +1,183 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ShopMusicProject
+build_property.RootNamespace = ShopMusicProject
+build_property.ProjectDir = F:\project\2\ShopMusicProject\ShopMusicProject\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\project\2\ShopMusicProject\ShopMusicProject
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Buying/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5aW5nXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Buying/CreateDtl.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5aW5nXENyZWF0ZUR0bC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Buying/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5aW5nXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Buying/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5aW5nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Buying/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5aW5nXFNob3cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Cart/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Cart/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxTaG93LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Employee/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Employee/DashBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGFzaEJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Employee/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Employee/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Employee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Employee/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Employee/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Home/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Home/Shop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG9wLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Home/ShopDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG9wRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Home/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG93LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Product/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Product/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Report/JournalPurchase.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XEpvdXJuYWxQdXJjaGFzZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Report/JournalSale.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XEpvdXJuYWxTYWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Report/JournalStock.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XEpvdXJuYWxTdG9jay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Report/SaleDaily.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XFNhbGVEYWlseS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Report/SaleMonthly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XFNhbGVNb250aGx5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Report/SumPurchaseDaily.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XFN1bVB1cmNoYXNlRGFpbHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Report/SumPurchaseMonthly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XFN1bVB1cmNoYXNlTW9udGhseS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Report/WorkForEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XFdvcmtGb3JFbXBsb3llZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/project/2/ShopMusicProject/ShopMusicProject/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2dk6j2e99n

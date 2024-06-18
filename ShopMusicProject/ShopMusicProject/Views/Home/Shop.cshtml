@@ -1,0 +1,210 @@
+﻿@using ShopMusicProject.ViewModels;
+@using System.Globalization;
+@using ShopMusicProject.Models;
+@using Microsoft.AspNetCore.Http;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+@model dynamic;
+ 
+@{
+    CultureInfo us = new CultureInfo("en-us");
+
+}
+@{
+    ViewData["Title"] = "Shop";
+    var stext = ViewBag.stext;
+    var category = ViewBag.category;
+    
+}
+
+@{
+    var CartId = HttpContextAccessor.HttpContext.Session.GetString("CartId");
+    var CartMoney = HttpContextAccessor.HttpContext.Session.GetString("CartMoney");
+    var CartQty = HttpContextAccessor.HttpContext.Session.GetString("CartQty");
+    var CusId = HttpContextAccessor.HttpContext.Session.GetString("CusId");
+    var CusName = HttpContextAccessor.HttpContext.Session.GetString("CusName");
+    var StfId = HttpContextAccessor.HttpContext.Session.GetString("StfId");
+    var StfName = HttpContextAccessor.HttpContext.Session.GetString("StfName");
+    var Duty = HttpContextAccessor.HttpContext.Session.GetString("DutyId");
+
+
+}
+@{
+    var imgcus = "/imgcus/" + CusId + ".jpg";
+}
+<div class="bg-black">
+
+</div>
+<div class="d-flex w-100" style="margin : 0 auto;height:483px;">
+   
+    <div class="" style="width : 18%">
+        <div style="width:250px;height:300px;border-radius:15px;background-color:#272424;margin :5px 5px;display:flex;flex-direction:column">
+          
+            <div style="width:13vw;height:50px;">
+                <div style="width:80px;height:100px;border-radius:100px;position:relative;background-color:rgba(25, 23, 23, 1);
+                left:45%;top:10px;
+                    ">
+                <div style="position:absolute;top:10%;left:12%;">
+                    @if(CusName != null){
+                            <img src="@imgcus" width="60" height="60" style="border-radius:100px;"/>
+                        }
+                        else
+                        {
+                            <svg width="61" height="77" viewBox="0 0 61 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M49.6122 54.1337C47.0298 45.1641 40.0911 40.0246 30.5675 40.0246H30.4988C20.9498 39.966 13.9755 45.1417 11.3881 54.1337L11.0881 55.1778L11.9371 55.7473C16.9136 59.0805 23.1204 60.7695 30.3794 60.7695C30.4607 60.7695 30.542 60.7695 30.6208 60.7695C37.9815 60.7695 44.0154 59.1252 49.0632 55.7473L49.9121 55.1778L49.6122 54.1337Z" fill="white" fill-opacity="0.5" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M30.5002 33.8042C37.4211 33.8042 43.0535 27.6207 43.0535 20.019C43.0535 12.4145 37.4211 6.23096 30.5002 6.23096C23.5792 6.23096 17.9494 12.4145 17.9494 20.019C17.9494 27.6207 23.5792 33.8042 30.5002 33.8042Z" fill="white" fill-opacity="0.5" />
+                            </svg>
+                        }
+                       
+                </div>
+                <div style="color:white;position:absolute;left:-80%;top:80%;font-size:20px;width:200px;"class="text-center">
+                    @if(CusName != null){
+                            <div>ยินดีตอนรับ</div>
+                            <div>@CusName</div>
+                            <div style="position:absolute;left:-10px;">สินค้าในตระกร้า : @CartQty</div>
+                            <div style="position:absolute;left:-10px;top:100px;">ราคารวมทั้งหมด : @CartMoney</div>
+                        }
+                        else
+                        {
+                            <span>  ผู้ใช้งาน</span>
+                        }
+
+                </div>
+                </div>
+            </div>
+            <div style="width:240px;height:290px;border-radius:25px;background-color: rgba(25, 23, 23, 1);margin: 5px 5px;padding-top:100px;margin-bottom:10px;">
+
+            </div>
+        </div>
+
+        <div style="width:250px;height:260px;background-color:rgba(28, 25, 25, 1);border-radius:20px;margin: 5px 5px;">
+            <div class="row">
+                <div style="color:white;width:100px;height:50px;font-size:35px;margin-left:10px;">
+                    Discover
+                </div>
+                <div class="input-group" style="background-color:transparent;width:260px;margin-left:5px;">
+                    <input type="text" name="stext" class="form-control" value="@stext" style="font-size:15px;background-color:transparent;color:#FFFFFF;" placeholder="Find your favourite music" />
+                    <button type="submit" class="btn" style="background-color:transparent;color:#FFFF;border : 1px solid white;">
+                        Search
+                    </button>
+                </div>
+            </div>
+            <style>
+                input::placeholder{
+                    color :white;
+                    font-weight:bold;
+                    opacity:1;
+                   
+                }
+            </style>
+            <div style="width:235px;height:100px;border : 1px solid white;border-radius:2px;margin-left:5px;margin-top:10px;">
+        <form asp-action="Shop" asp-controller="home">
+                <span style="color:rgba(255, 255, 255, 0.55);font-size:20px;margin-left:10px;">Category</span>
+
+        @foreach(Category cat in Model.Category){
+            <div class="col-sm-6 col-md-8 col-lg-9">
+                <input style="width:15px;height:15px;border:2px solid white;margin-left:10px;" type="radio" name="categoryText" value="@cat.Ncategory"/>
+                            <span style="color:rgba(255, 255, 255, 0.42)">
+                    @cat.Ncategory
+                </span>
+                 
+            </div>
+        }
+        @category
+        <div class="">
+            <div class="col-sm-6 col-md-8 col-lg-9">
+            </div>
+        </div>
+                  
+        </form>
+            </div>
+        </div>
+       
+    </div>
+    <div class="col" style="width:130px;height:655px;background-color:rgba(28, 25, 25, 1);">
+        <div class="row" style="height:310px;width:500px;">
+            <div style="position:relative;top:10px; left:60%;">
+                <img width="300" height="300" style="position:absolute; z-index:3; left:0;" src="/image/1.png"/>
+                <img width="300" height="300" style="position:absolute; z-index:2; left:150px;" src="/image/2.png"/>
+                <img width="300" height="300" style="position:absolute; z-index:1; left:25px; top:30px;" src="/image/3.png" />
+            </div>
+            <div style="position:relative;top:-65px;left:650px;width:100px;height:100px;color:white;font-size:60px;z-index:4;font-weight:400;font-family:'NTR';line-height:.8;">
+                MOST
+                POPULAR
+                JOJI
+            </div>
+
+            <div style="position:relative;top:40px;left:660px;width:150px; height:100px;color:white;font-size:15px;z-index:4;font-family:'Inter';line-height:1;">
+                Nector - full album <br/>
+                Vinyl Size 12
+            </div>
+            <dfv style="position:relative;top:120px;left:500px;width:200px;height:100px;color:white;">
+                <div style="font-family:'Inter';font-size:15px;">
+                    Discover for more
+                </div>
+                <img style="position:absolute;z-index:18;" src="/image/Rectangle 18.png"/>
+                <img style="position:absolute;z-index:19;left:40px;" src="/image/Rectangle 19.png" />
+                <img style="position:absolute;z-index:20;left:80px;" src="/image/Rectangle 20.png" />
+                <img style="position:absolute;z-index:21;left:120px;" src="/image/Rectangle 21.png" />
+                <img style="position:absolute;z-index:22;left:160px;" src="/image/Rectangle 22.png" />
+                <img style="position:absolute;z-index:23;left:200px;" src="/image/Rectangle 23.png" />
+                
+            </dfv>
+        </div>
+   
+    <div class="row" style="grid-template-columns : repeat(3,1fr);height:200px;width:900px;margin-left:100px;">
+        @foreach (PdVM pd in Model.Product)
+        {
+                var fileName = "wwwroot/image/" + pd.Id.ToString() + ".jpg";
+                var pdimg = (System.IO.File.Exists(fileName)) ? "/image/" + pd.Id + ".jpg" : "/image/empty.jpg";
+                
+
+            <div class=" text-white col-sm-10 col-md-10 col-lg-10" style="width:120px;height:110px;background-color :transparent;font-size:10px;margin-left:50px;margin-right:50px;margin-top:30px;margin-bottom:20px;">
+                 <a asp-route-id="@pd.Id" asp-action="ShopDetail" asp-controller="home" class="text-decoration-none text-white">
+                <img src="@pdimg"style="height:90px;width:120px;margin-left : 0px;margin-bottom:5px;border-radius:10px;"/>
+                <div class="ms-1" style="font-size:10px;width:200px;">
+                            <span class="ps-1 mt-1" style="text-overflow:ellipsis;">สินค้า : @pd.Name</span> <br />
+                        <span class="ps-1 mt-1">ราคา @pd.Price บาท </span> <br/>
+                        <span class="ps-1 mt-1">ยื่ห้อ :@pd.BrandName</span>
+                </div>
+                
+                @*<a asp-route-id="@pd.Id" asp-action="ShopDetail" asp-controller="home" class="btn btn-primary">Read me</a>
+                <a asp-route-id="@pd.Id" asp-controller="Cart" asp-action="AddDtl" class="btn btn-outline-primary">Buy</a>*@
+                </a>
+            </div>
+           
+        }
+    </div>
+    </div>
+   
+</div>
+<div style="height:20px;position:relative;top:100px;left:20px;width:200px;" class="">
+   
+    <div style="">
+        @if (ViewBag.CurrentPageShop > 1)
+        {
+            @Html.ActionLink("Previous", "Shop", new { page = ViewBag.CurrentPageShop - 1 }, new { @class = "btn btn-secondary bg-transparent" })
+        }
+
+        @for (int i = 1; i <= ViewBag.TotalPagesShop; i++)
+        {
+            if (i == ViewBag.CurrentPageShop)
+            {
+                <span class="btn btn-secondary" style="background-color:transparent;">@i</span>
+            }
+            else
+            {
+                @Html.ActionLink(i.ToString(), "Shop", new { page = i }, new { @class = "btn btn-secondary bg-transparent" })
+            }
+        }
+
+        @if (ViewBag.CurrentPageShop < ViewBag.TotalPagesShop)
+        {
+            @Html.ActionLink("Next", "Shop", new { page = ViewBag.CurrentPageShop + 1 }, new { @class = "btn btn-secondary bg-transparent" })
+        }
+
+    </div>
+</div>
+    
+             @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }

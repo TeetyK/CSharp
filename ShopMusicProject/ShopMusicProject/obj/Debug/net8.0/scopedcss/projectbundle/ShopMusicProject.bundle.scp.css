@@ -1,0 +1,221 @@
+/* _content/ShopMusicProject/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+body[b-2dk6j2e99n], html[b-2dk6j2e99n] {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+a.navbar-brand[b-2dk6j2e99n] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-2dk6j2e99n] {
+  color: #0077cc;
+}
+
+.btn-primary[b-2dk6j2e99n] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-2dk6j2e99n], .nav-pills .show > .nav-link[b-2dk6j2e99n] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-2dk6j2e99n] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-2dk6j2e99n] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-2dk6j2e99n] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-2dk6j2e99n] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-2dk6j2e99n] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+list-admin[b-2dk6j2e99n]{
+  
+}
+.list-admin:hover[b-2dk6j2e99n] {
+    animation-name : list-admin-ani-b-2dk6j2e99n;
+    animation-duration : 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function : ease-in;
+}
+@keyframes list-admin-ani-b-2dk6j2e99n {
+    from {
+        background-color: rgba(53,65,76,1);
+    }
+    to {
+        background-color: rgba(53,65,76,1);
+    }
+}
+.radio-form[b-2dk6j2e99n] {
+    display: block;
+    margin: auto;
+    max-width: 10em;
+    position: relative;
+}
+
+    .radio-form input[b-2dk6j2e99n] {
+        position: fixed;
+        top: -1.5em;
+        left: -1.5em;
+    }
+
+    .radio-form label[b-2dk6j2e99n] {
+        cursor: pointer;
+        display: block;
+        font-weight: bold;
+        text-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.2);
+        transition: color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    }
+
+        .radio-form label:not(:last-of-type)[b-2dk6j2e99n] {
+            margin-bottom: 1.5em;
+        }
+
+        .radio-form label span[b-2dk6j2e99n] {
+            box-shadow: 0 0 0 0.2em currentColor inset, 0 0.2em 0.2em rgba(0, 0, 0, 0.2), 0 0.3em 0.2em rgba(0, 0, 0, 0.2) inset;
+            display: inline-block;
+            margin-right: 0.5em;
+            vertical-align: bottom;
+            border-radius: 50%;
+            width: 1.5em;
+            height: 1.5em;
+            transition: transform 0.2s cubic-bezier(0.5, 0, 0.5, 2), box-shadow 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95), color 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+        }
+
+    .radio-form input:checked + label[b-2dk6j2e99n],
+    .radio-form input:checked + label span[b-2dk6j2e99n] {
+        color: #255ff4;
+    }
+
+        .radio-form input:checked + label[b-2dk6j2e99n],
+        .radio-form input:checked + label span[b-2dk6j2e99n] {
+            transition-delay: 0.4s;
+        }
+
+    .radio-form label span[b-2dk6j2e99n] {
+        transform: scale(1.2);
+    }
+
+    .radio-form .worm[b-2dk6j2e99n] {
+        top: 0.375em;
+        left: 0.375em;
+        position: absolute;
+    }
+
+    .radio-form .worm__segment[b-2dk6j2e99n] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0.75em;
+        height: 0.75em;
+        border-radius: 50%;
+        transition: transform 0.4s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    }
+
+        .radio-form .worm__segment[b-2dk6j2e99n]:before {
+            animation-duration: 0.4s;
+            animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+            background: currentColor;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        .radio-form .worm__segment:first-child[b-2dk6j2e99n]:before,
+        .radio-form .worm__segment:last-child[b-2dk6j2e99n]:before {
+            box-shadow: 0 0 1em 0 currentColor;
+        }
+
+@keyframes hop1-b-2dk6j2e99n {
+    from, to {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-1.5em);
+    }
+}
+
+@keyframes hop2-b-2dk6j2e99n {
+    from, to {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-1.5em);
+    }
+}
+
+@keyframes hop3-b-2dk6j2e99n {
+    from, to {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-1.5em);
+    }
+}
+
+.radio-form input:nth-of-type(1):checked ~ .worm .worm__segment[b-2dk6j2e99n] {
+    transform: translateY(0);
+}
+
+    .radio-form input:nth-of-type(1):checked ~ .worm .worm__segment[b-2dk6j2e99n]:before {
+        animation-name: hop1-b-2dk6j2e99n;
+    }
+
+.radio-form input:nth-of-type(2):checked ~ .worm .worm__segment[b-2dk6j2e99n] {
+    transform: translateY(3em);
+}
+
+    .radio-form input:nth-of-type(2):checked ~ .worm .worm__segment[b-2dk6j2e99n]:before {
+        animation-name: hop2-b-2dk6j2e99n;
+    }
+
+.radio-form input:nth-of-type(3):checked ~ .worm .worm__segment[b-2dk6j2e99n] {
+    transform: translateY(6em);
+}
+
+    .radio-form input:nth-of-type(3):checked ~ .worm .worm__segment[b-2dk6j2e99n]:before {
+        animation-name: hop3-b-2dk6j2e99n;
+    }
+
+@media screen and (prefers-color-scheme: dark) {
+    body[b-2dk6j2e99n] {
+        background: #17181c;
+        color: #e3e4e8;
+    }
+
+    .radio-form input:checked + label[b-2dk6j2e99n],
+    .radio-form input:checked + label span[b-2dk6j2e99n],
+    .radio-form .worm__segment[b-2dk6j2e99n]:before {
+        color: #5583f6;
+    }
+}

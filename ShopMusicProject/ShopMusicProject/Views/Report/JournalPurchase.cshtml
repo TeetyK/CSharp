@@ -1,0 +1,65 @@
+﻿@using System.Globalization;
+@model IEnumerable<ShopMusicProject.ViewModels.PurchaseJournal>
+
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-warning">@TempData["ErrorMessage"]</div>
+}
+<table class="table table-borderless table-hover">
+    <tr>
+        <th>วันที่</th>
+        <th>สินค้า</th>
+        <th>ตัวแทนจำหน่าย</th>
+        <th>ผู้ขาย</th>
+        <th class="text-end">จำนวนสินค้า</th>
+        <th class="text-center">ยอดเงิน</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.bdate</td>
+            <td>@item.PdName</td>
+            <td>@item.SupName</td>
+            <td>@item.Saleman</td>
+            <td class="text-end">@item.Bqty</td>
+            <td class="text-end">@item.Bmoney</td>
+        </tr>
+    }
+</table>
+<div class="">
+    @if (ViewBag.CurrentPage > 1)
+    {
+        @Html.ActionLink("Previous", "JournalSale", new { page = ViewBag.CurrentPage - 1 }, new { @class = "btn btn-secondary" })
+    }
+
+    @for (int i = 1; i <= ViewBag.TotalPages; i++)
+    {
+        if (i == ViewBag.CurrentPage)
+        {
+            <span class="btn btn-secondary">@i</span>
+        }
+        else
+        {
+            @Html.ActionLink(i.ToString(), "JournalSale", new { page = i }, new { @class = "btn btn-secondary" })
+        }
+    }
+
+    @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+    {
+        @Html.ActionLink("Next", "JournalSale", new { page = ViewBag.CurrentPage + 1 }, new { @class = "btn btn-secondary" })
+    }
+
+</div>
+@section Scripts {
+    <script>
+        //ระบุ id ที่ต้องการใช้
+        $('#theDate').datetimepicker({
+            timepicker: false,
+            datepicker: true,
+            format: 'Y-m-d'
+        })
+
+    </script>
+}

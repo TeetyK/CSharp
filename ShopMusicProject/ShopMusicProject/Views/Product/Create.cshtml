@@ -1,0 +1,80 @@
+﻿@model ShopMusicProject.Models.Product
+
+@{
+
+}
+<h4 class="text-white">Product</h4>
+<hr />
+<div class="row text-white">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" value="@ViewBag.Pd" readonly />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Stock" class="control-label"></label>
+                <input asp-for="Stock" class="form-control" />
+                <span asp-validation-for="Stock" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cost" class="control-label"></label>
+                <input asp-for="Cost" class="form-control" />
+                <span asp-validation-for="Cost" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <label asp-for="Brandid" class="control-label"></label>
+                <select asp-for="Brandid" class="form-select" asp-items="ViewBag.Brand"></select>
+                <span asp-validation-for="Brandid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Catid" class="control-label"></label>
+                <select asp-for="Catid" class="form-select" asp-items="ViewBag.Category"></select>
+                <span asp-validation-for="Catid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-12">
+                <form method="post" enctype="multipart/form-data" asp-action="ImgUploadC" asp-controller="product">
+                    <input name="theid" type="hidden" class="form-control" value="ViewBag.Pd" />
+
+                    <input class="form-control" name="imgfiles" type="file"
+                           accept="image/jpeg" required />
+                    <input class="btn btn-success" type="submit" value="upload" />
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="@ViewBag.ImgFile" width="250" class="shadow" />
+            <div class="row mt-2">
+                <div class="col">
+                    <a class="btn btn-sm btn-danger" onclick="return confirm('ยืนยันลบรูป')"
+                       asp-action="ImgDeleteC" asp-controller="product" asp-route-id="ViewBag.Pd">
+                        <i class="bi bi-x-lg me-2"></i>ลบรูปภาพ
+                    </a>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

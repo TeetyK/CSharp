@@ -1,0 +1,70 @@
+﻿@model ShopMusicProject.Models.BuyDtl
+
+@{
+    ViewData["Title"] = "CreateDtl";
+}
+@if(TempData["ErrorMessage"] != null){
+    <div class="alert alert-warning">@TempData["ErrorMessage"]</div>
+}
+@*if (ViewBag.PdId != null)
+{
+    <h4>เพิ่มสินค้าในเอกสาร @ViewBag.BuyId</h4>
+}*@
+<hr />
+<div class="row text-white">
+    <div class="col-md-4">
+        <form asp-action="CreateDtl" onsubmit="calmoney()">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BuyId" class="control-label"></label>
+               @* <input asp-for="BuyId" class="form-control" value="ViewBag.BuyId" readonly/>*@
+                <input asp-for="BuyId" class="form-control" value="@ViewBag.buyid" readonly/>
+                <span asp-validation-for="BuyId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PdId" class="control-label"></label>
+                @*if(ViewBag.PdId != null){
+                    <select asp-for="PdId" class="form-control" asp-items="@ViewBag.PdId"></select>
+                }*@
+               <select asp-for="PdId" class="form-control" asp-items="@ViewBag.pdid"></select>
+                <span asp-validation-for="PdId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BdtlQty" class="control-label"></label>
+                <input asp-for="BdtlQty" class="form-control" id="BdtlQty" type="number" onchange="calmoney()"/>
+                <span asp-validation-for="BdtlQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BdtlPrice" class="control-label"></label>
+                <input asp-for="BdtlPrice" class="form-control" id="BdtlPrice" type="number" onchange="calmoney()"/>
+                <span asp-validation-for="BdtlPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BdtlMoney" class="control-label"></label>
+                <input asp-for="BdtlMoney" class="form-control" id="BdtlMoney" readonly/>
+                <span asp-validation-for="BdtlMoney" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="บันทึกสินค้า" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Show" asp-route-buyid="@ViewBag.BuyId" asp-controller="Buying">กลับหน้าหลัก</a>
+</div>
+@section Scripts{
+    <script>
+        function calmoney() {
+            var qty = document.getElementById("BdtlQty").value * 1;
+            var price = document.getElementById("BdtlPrice").value * 1;
+            var money = qty * price;
+            document.getElementById("BdtlMoney").value = money;
+        }
+    </script>
+  
+}
+@{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}

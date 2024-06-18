@@ -1,0 +1,64 @@
+﻿@using System.Globalization;
+@model IEnumerable<ShopMusicProject.ViewModels.WorkEm>
+
+@{
+    CultureInfo thaiCulture = new CultureInfo("th-TH");
+
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-warning">@TempData["ErrorMessage"]</div>
+}
+<table class="table table-borderless table-hover">
+    <tr>
+        <th>วันที่</th>
+        <th>รายชื่อพนักงาน</th>
+        <th class="text-end">เวลาเข้างาน</th>
+        <th class="text-center">เวลาออกงาน</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.WorkDate.ToString()</td>
+            <td>@item.EmName</td>
+            <td class="text-end">@item.WorkIn.ToString()</td>
+            <td class="text-end">@item.WorkOut.ToString()</td>
+        </tr>
+    }
+</table>
+<div class="">
+    @if (ViewBag.CurrentPage > 1)
+    {
+        @Html.ActionLink("Previous", "JournalSale", new { page = ViewBag.CurrentPage - 1 }, new { @class = "btn btn-secondary" })
+    }
+
+    @for (int i = 1; i <= ViewBag.TotalPages; i++)
+    {
+        if (i == ViewBag.CurrentPage)
+        {
+            <span class="btn btn-secondary">@i</span>
+        }
+        else
+        {
+            @Html.ActionLink(i.ToString(), "JournalSale", new { page = i }, new { @class = "btn btn-secondary" })
+        }
+    }
+
+    @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+    {
+        @Html.ActionLink("Next", "JournalSale", new { page = ViewBag.CurrentPage + 1 }, new { @class = "btn btn-secondary" })
+    }
+
+</div>
+@section Scripts {
+    <script>
+        //ระบุ id ที่ต้องการใช้
+        $('#theDate').datetimepicker({
+            timepicker: false,
+            datepicker: true,
+            format: 'Y-m-d'
+        })
+
+    </script>
+}

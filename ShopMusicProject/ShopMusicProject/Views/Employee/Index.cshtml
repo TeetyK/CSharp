@@ -1,0 +1,11 @@
+﻿@using Microsoft.AspNetCore.Http;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    <div class="h-100">
+  
+    <div class="display-5 text-secondary">
+        สวัสดี @HttpContextAccessor.HttpContext.Session.GetString("StfName")
+    </div>
+    </div>
+}

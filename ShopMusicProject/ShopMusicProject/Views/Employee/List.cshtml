@@ -1,0 +1,85 @@
+﻿@{
+
+}
+@model IEnumerable<ShopMusicProject.Models.Employee>
+
+<div class="">
+
+    @ViewBag.ErrorMessage
+    <div class="table-responsive w-100">
+        <table class="table table-striped text-center">
+            <thead>
+                <tr style="background-color : #3c373e;color :  white">
+                    <th scope="col">EmId</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">StartAt</th>
+                    <th scope="col">QuitAt</th> 
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    var name = item.Fname + " " + item.Lname;
+                    <tr scope="row" class="text-center">
+                        <td>@item.EmId</td>
+                        <td>@item.Username</td>
+                        <td>@item.Password</td>
+                        <td>@name</td>
+                        <td>@item.Type</td>
+                        <td>@item.StartAt</td>
+                        <td>@item.QuitAt</td>
+                        
+                        <td><a class="btn btn-warning" asp-action="edit" asp-controller="employee" asp-route-emid="@item.EmId">แก้ไข</a></td>
+                        <td><a class="btn btn-close" asp-action="delete" asp-controller="employee" asp-route-emid="@item.EmId"></a></td>
+                    </tr>
+                }
+                <tr class="text-center">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    
+                    <td class="text-end text-center">
+                        <a class="btn btn-outline-success" asp-action="Create" asp-controller="Employee">เพิ่ม</a>
+                    </td>
+                    
+                </tr>
+            </tbody>
+            
+        </table>
+        <div class="">
+            @if (ViewBag.CurrentPage > 1)
+            {
+                @Html.ActionLink("Previous", "Index", new { page = ViewBag.CurrentPage - 1 }, new { @class = "btn btn-secondary" })
+            }
+
+            @for (int i = 1; i <= ViewBag.TotalPages; i++)
+            {
+                if (i == ViewBag.CurrentPage)
+                {
+                    <span class="btn btn-secondary">@i</span>
+                }
+                else
+                {
+                    @Html.ActionLink(i.ToString(), "Index", new { page = i }, new { @class = "btn btn-secondary" })
+                }
+            }
+
+            @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+            {
+                @Html.ActionLink("Next", "Index", new { page = ViewBag.CurrentPage + 1 }, new { @class = "btn btn-secondary" })
+            }
+
+        </div>
+    </div>
+    
+</div>

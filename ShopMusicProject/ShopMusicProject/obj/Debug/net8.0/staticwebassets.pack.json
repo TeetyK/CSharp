@@ -1,0 +1,433 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ShopMusicProject.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ShopMusicProject.bundle.scp.css"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\audio\\1.mp3",
+      "PackagePath": "staticwebassets\\audio\\1.mp3"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\css\\jquery.datetimepicker.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery.datetimepicker.min.css"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\1.png",
+      "PackagePath": "staticwebassets\\image\\1.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\2.png",
+      "PackagePath": "staticwebassets\\image\\2.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\2024.png",
+      "PackagePath": "staticwebassets\\image\\2024.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\3.png",
+      "PackagePath": "staticwebassets\\image\\3.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\5 APRIL.png",
+      "PackagePath": "staticwebassets\\image\\5 APRIL.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\9hu0076s 1.png",
+      "PackagePath": "staticwebassets\\image\\9hu0076s 1.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\Empty.jpg",
+      "PackagePath": "staticwebassets\\image\\Empty.jpg"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\PD001.jpg",
+      "PackagePath": "staticwebassets\\image\\PD001.jpg"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\PD002.jpg",
+      "PackagePath": "staticwebassets\\image\\PD002.jpg"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\PD003.jpg",
+      "PackagePath": "staticwebassets\\image\\PD003.jpg"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\PD004.jpg",
+      "PackagePath": "staticwebassets\\image\\PD004.jpg"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\PD005.jpg",
+      "PackagePath": "staticwebassets\\image\\PD005.jpg"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\PD006.jpg",
+      "PackagePath": "staticwebassets\\image\\PD006.jpg"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\PD007.jpg",
+      "PackagePath": "staticwebassets\\image\\PD007.jpg"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\PD008.jpg",
+      "PackagePath": "staticwebassets\\image\\PD008.jpg"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\PD009.jpg",
+      "PackagePath": "staticwebassets\\image\\PD009.jpg"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\PD010.jpg",
+      "PackagePath": "staticwebassets\\image\\PD010.jpg"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\PD011.jpg",
+      "PackagePath": "staticwebassets\\image\\PD011.jpg"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\PD012.jpg",
+      "PackagePath": "staticwebassets\\image\\PD012.jpg"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\PD014.jpg",
+      "PackagePath": "staticwebassets\\image\\PD014.jpg"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\PD015.jpg",
+      "PackagePath": "staticwebassets\\image\\PD015.jpg"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\RELEASED.png",
+      "PackagePath": "staticwebassets\\image\\RELEASED.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\Rectangle 10.png",
+      "PackagePath": "staticwebassets\\image\\Rectangle 10.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\Rectangle 151.png",
+      "PackagePath": "staticwebassets\\image\\Rectangle 151.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\Rectangle 18.png",
+      "PackagePath": "staticwebassets\\image\\Rectangle 18.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\Rectangle 19.png",
+      "PackagePath": "staticwebassets\\image\\Rectangle 19.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\Rectangle 20.png",
+      "PackagePath": "staticwebassets\\image\\Rectangle 20.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\Rectangle 21.png",
+      "PackagePath": "staticwebassets\\image\\Rectangle 21.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\Rectangle 22.png",
+      "PackagePath": "staticwebassets\\image\\Rectangle 22.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\Rectangle 23.png",
+      "PackagePath": "staticwebassets\\image\\Rectangle 23.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\SMP.zip",
+      "PackagePath": "staticwebassets\\image\\SMP.zip"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\image 2.png",
+      "PackagePath": "staticwebassets\\image\\image 2.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\image 3.png",
+      "PackagePath": "staticwebassets\\image\\image 3.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\login.png",
+      "PackagePath": "staticwebassets\\image\\login.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\logo.png",
+      "PackagePath": "staticwebassets\\image\\logo.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\image\\staff.png",
+      "PackagePath": "staticwebassets\\image\\staff.png"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\imgcus\\C001.jpg",
+      "PackagePath": "staticwebassets\\imgcus\\C001.jpg"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\imgcus\\C006.jpg",
+      "PackagePath": "staticwebassets\\imgcus\\C006.jpg"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\js\\jquery.datetimepicker.full.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.datetimepicker.full.min.js"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "F:\\project\\2\\ShopMusicProject\\ShopMusicProject\\wwwroot\\vdo\\bg.mp4",
+      "PackagePath": "staticwebassets\\vdo\\bg.mp4"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ShopMusicProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ShopMusicProject.props",
+      "PackagePath": "build\\ShopMusicProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ShopMusicProject.props",
+      "PackagePath": "buildMultiTargeting\\ShopMusicProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ShopMusicProject.props",
+      "PackagePath": "buildTransitive\\ShopMusicProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

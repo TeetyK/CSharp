@@ -1,0 +1,106 @@
+﻿@using Microsoft.AspNetCore.Session;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<div class="container">
+    <!--ทำการตรวจสอบว่ามีการส่ง ErrorMessage มาหรือไม่
+        ถ้ามีให้แสดง Alert -->
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-warning">@TempData["ErrorMessage"]</div>
+    }
+    @*<div class="text-center">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 offset-lg-4 offset-lg-3 ">
+                <img class="mt-5" src=<svg width="116" height="114" viewBox="0 0 116 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.75">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M57.8356 16.625C48.0357 16.625 40.0923 24.428 40.0923 34.0562C40.0923 43.6844 48.0357 51.4874 57.8356 51.4874C67.6285 51.4874 75.5727 43.6851 75.5727 34.0562C75.5727 24.4274 67.6285 16.625 57.8356 16.625ZM32.8423 34.0562C32.8423 20.4903 44.0345 9.5 57.8356 9.5C71.6312 9.5 82.8227 20.491 82.8227 34.0562C82.8227 47.6215 71.6312 58.6124 57.8356 58.6124C44.0345 58.6124 32.8423 47.6222 32.8423 34.0562Z" fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M28.4148 91.1287C37.0373 95.5807 47.0738 97.402 57.9908 97.3758H58.0085C68.9254 97.402 78.9616 95.5807 87.5841 91.1289C82.6326 79.5112 71.5792 73.9182 58.0089 73.9523H57.9904C44.4031 73.9181 33.3677 79.4979 28.4148 91.1287ZM57.9996 66.8273C41.0857 66.7876 26.0204 74.5188 20.5027 91.6661L19.646 94.3285L22.0722 95.7821C32.7266 102.165 45.1127 104.531 57.9996 104.501C70.8866 104.531 83.2727 102.165 93.9271 95.7821L96.3532 94.3286L95.4966 91.6661C89.9847 74.5355 74.8969 66.7877 57.9996 66.8273Z" fill="black" />
+                    </g>
+                </svg> width="250" />
+                <!--src="/image/staff.png"-->
+            </div>
+        </div>
+    </div>
+    <div style="background-color:#282424;width:1487px;height:80px;bottom:-15px;position:absolute;"></div>
+    <img src="/image/Rectangle 10.png" style="height:649px;" />
+    <div style="background-color:#111111;position:absolute;right:-185px;width:700px;height:580px;top:0;border-radius:10px;"></div>
+    <div class="bg" style="width:700px;height:500px;position:absolute;right:-185px;top:-40px;z-index:2;color:white;top:50px;border:2px solid white;border-radius:50px;background-color:gray;filter: blur(1.5rem);opacity:.4;"></div>
+    <form asp-controller="Employee" asp-action="login" method="post">
+        <div class="text-center">
+            <div class="row m-3">
+                <div class="col-lg-4 col-md-6 col-sm-12 offset-lg-4 offset-lg-3 ">
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-person-fill"></i>
+                        </span>
+                        <input type="text" name="userName" id="userName" class="form-control"
+                               placeholder="ผู้ใช้งาน" required autocomplete="off" />
+                    </div>
+                    <div class="input-group mt-2">
+                        <span class="input-group-text">
+                            <i class="bi bi-key-fill"></i>
+                        </span>
+                        <input type="password" name="userPass" id="userPass" class="form-control"
+                               placeholder="รหัสผ่าน" required autocomplete="off" />
+                    </div>
+                </div>
+            </div>
+            <div class="row m-3">
+                <div class="col-lg-2 col-md-3 col-sm-6 offset-lg-4 offset-lg-3 ">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 d-grid ">
+                    <button type="submit" class="btn btn-primary"> เข้าสู่ระบบ </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>*@
+
+    <div class="position-relative" style="width:1300px;height:640px;left:-100px;">
+        <div style="background-color:#282424;width:1487px;height:80px;bottom:-15px;position:absolute;"></div>
+        <img src="/image/Rectangle 10.png" style="height:649px;" />
+        <div style="background-color:#111111;position:absolute;right:-185px;width:700px;height:580px;top:0;border-radius:10px;"></div>
+        <div class="bg" style="width:700px;height:500px;position:absolute;right:-185px;top:-40px;z-index:2;color:white;top:50px;border:2px solid white;border-radius:50px;background-color:gray;filter: blur(1.5rem);opacity:.4;"></div>
+        <form asp-action="login" asp-controller="employee" method="post">
+
+            <div class="d-flex row p-3 text-center" style="width:400px;height:60vh;position:absolute;right:0;z-index:3;color:white;top:50px;">
+                <div>
+                    เข้าสู่ระบบสำหรับพนักงาน
+                </div>
+                <div class="">
+                    <div class="m-3">
+                        <input class="form-control" type="text" name="userName" placeholder="ผู้ใช้งาน / อีเมล์" />
+                    </div>
+                    <div class="m-3 d-flex">
+                        <input class="form-control" id="password2" type="password" name="userPass" placeholder="รหัสผ่าน" />
+                        <input style="" class="btn-check" id="btncheck2" type="checkbox" onclick="ShowPass2(this)" />
+                        <label class="btn btn-outline-primary" for="btncheck2">แสดง</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary ">เข้าสู่ระบบ</button>
+                </div>
+                <div class="">
+                  
+                </div><br />
+               
+            </div>
+        </form>
+     
+    </div>
+    <script>
+        const password1 = document.querySelector("#password1");
+        const password2 = document.querySelector("#password2");
+        function ShowPass1(obj) {
+            if (obj.checked) {
+                password1.type = "text";
+            } else {
+                password1.type = "password";
+            }
+        }
+        function ShowPass2(obj) {
+            if (obj.checked) {
+                password2.type = "text";
+            } else {
+                password2.type = "password";
+            }
+        }
+    </script>

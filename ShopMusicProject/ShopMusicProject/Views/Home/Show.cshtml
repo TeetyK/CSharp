@@ -1,0 +1,105 @@
+﻿@model ShopMusicProject.Models.Customer
+
+@{
+    ViewData["Title"] = "Show";
+    var name_info = Model.Fname + " " + Model.Lname;
+}
+
+<div style="color:white;background-color :#282424;height:600px;width:1450px;border-radius:10px;">
+    <div class="row" style="">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="@ViewBag.ImgFile" width="300" class="shadow" style="border-radius:50px;margin-left:100px;margin-top:10px;"/>
+            <div class="row mt-2">
+                <div class="col" style="margin-left:180px;">
+                    @if(ViewBag.ImgFile != null){
+                         <a class="btn btn-sm btn-danger" onclick="return confirm('ยืนยันลบรูป')"
+                       asp-action="ImgDelete"asp-controller="home" asp-route-id="@Model.CusId">
+                        <i class="bi bi-x-lg me-2"></i>ลบรูปภาพ
+                    </a>
+                    }
+                   
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12"style="">
+            Information of Personal
+            <dl class="row">
+                
+                <dt class="col-sm-2 pe-0">
+                   
+                    @Html.DisplayNameFor(model => model.Fname)
+                </dt>
+                <dd class="col-sm-10 pe-0">
+                    @Html.DisplayFor(model => model.Fname)
+                </dd>
+            <dt class="col-sm-2 pe-0">
+                @Html.DisplayNameFor(model => model.Lname)
+            </dt>
+            <dd class="col-sm-10 pe-0">
+                @Html.DisplayFor(model => model.Lname)
+            </dd>
+                <dt class="col-sm-2 pe-0">
+                    
+                    @Html.DisplayNameFor(model => model.Username)
+                </dt>
+                <dd class="col-sm-10 pe-0">
+                    @Html.DisplayFor(model => model.Username)
+                </dd>
+                <dt class="col-sm-2 pe-0">
+                    @Html.DisplayNameFor(model => model.Password)
+                </dt>
+                <dd class="col-sm-10 pe-0">
+                    @Html.DisplayFor(model => model.Password)
+                </dd>
+                <dt class="col-sm-2 pe-0">
+                    @Html.DisplayNameFor(model => model.Email)
+                </dt>
+                <dd class="col-sm-10 pe-0">
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+                <dt class="col-sm-2 pe-0">
+                    @Html.DisplayNameFor(model => model.Address)
+                </dt>
+                <dd class="col-sm-10 pe-0">
+                    @Html.DisplayFor(model => model.Address)
+                </dd>
+                <dt class="col-sm-2 pe-0">
+                    @Html.DisplayNameFor(model => model.CreateAt)
+                </dt>
+                <dd class="col-sm-10 pe-0">
+                    @Html.DisplayFor(model => model.CreateAt)
+                </dd>
+                <dt class="col-sm-2 pe-0">
+                    @Html.DisplayNameFor(model => model.LoginAt)
+                </dt>
+                <dd class="col-sm-10 pe-0">
+                    @Html.DisplayFor(model => model.LoginAt)
+                </dd>
+                <dt class="col-sm-2 pe-0">
+                @Html.DisplayNameFor(model => model.Phone)
+                </dt>
+                <dd class="col-sm-10 pe-0">
+                @Html.DisplayFor(model => model.Phone)
+                </dd>
+            </dl>
+            <div class="row">
+                <div class="col-12">
+                    <form method="post" enctype="multipart/form-data" asp-action="ImgUpload" asp-controller="home">
+                        <input name="theid" type="hidden" class="form-control" value="@Model.CusId" />
+
+                        <input class="form-control" name="imgfiles" type="file"
+                               accept="image/jpeg" required />
+                        <input class="btn btn-success" type="submit" value="upload" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="width:100%;height:100px;text-decoration:none;background-color :#111111;position:absolute;bottom:0px;">
+        <a asp-action="Index" class="btn btn-outline-primary" style="text-decoration:none;left:100px;top:20px;position:absolute;">Back to List</a>
+    </div>
+</div>
+
+
+
+
