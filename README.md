@@ -1,8 +1,8 @@
 # CSharp
 Project About C#
 # Tool
-:Heart: Visual Studio 2022
-:Heart: Micrsofot SQL Server 
+ Visual Studio 2022
+ Microsoft SQL Server 
 # Programming Language 
 C# ASP.NET MVC
 # Markup
